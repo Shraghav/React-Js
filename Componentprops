@@ -1,0 +1,21 @@
+import './App.css';
+const Details = (props) => {
+  return (
+    <>
+      <h2>Name: {props.name}</h2>
+      <h2>Department:{props.department}</h2>
+      <h2>Age:{props.age}</h2>
+    </>
+  )
+}
+
+const App = () => { 
+  return (
+    <div className="App">
+      <Details name={'Raghav'} department={'AI&DS'} age={20} />
+      <Details name={'John'} department={'TXT'} age={19} />
+    </div>
+  );
+}
+
+export default App;
