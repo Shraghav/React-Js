@@ -1,0 +1,71 @@
+function Page() {
+  return (
+    <div>
+     <Header />
+     <MainContent /> 
+     <Footer />
+    </div>
+  )
+}
+
+function MainContent() {
+  return (
+    <div className='content'>
+      <h1>Reasons To learn React js library</h1>
+      <ol>
+        <li>It's a popular library, so I'll be
+            able to fit in with the cool kids!</li>
+        <li>I'm more likely to get a job as a developer
+            if I know React</li>
+      </ol>
+    </div>
+  )
+}
+function Header() {
+  return(
+    <header>
+    <nav className='align'>
+        <img src="react.png" className='img'/>
+        <ul className='items'>
+          <li>Pricing</li>  
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+    </nav>
+    </header>
+  )
+}
+
+function Footer() {
+  return (
+    <footer>© 20xx raghav development. All rights reserved.</footer>
+  )
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<Page/>);
+
+
+//style css
+.items{
+    list-style: none;
+    display: flex;
+} 
+
+.align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items >li{
+    padding: 10px;
+}
+
+.img{
+    width: 80px;
+    height: 90px;
+}
+
+header{
+    text-decoration: underline;
+    font-size: 25px;
+}
